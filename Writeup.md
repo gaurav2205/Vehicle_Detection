@@ -58,7 +58,7 @@ The parameters were found by manually changing them and experimenting to try to 
 |Classifier|LinearSVC|
 |Scaler|StandardScaler|
 
-With this parameters, the classifier accuracy was 99.41 % and it took 10.06 seconds to train.
+With this parameters, the classifier accuracy was 99.1 % and it took 10.06 seconds to train.
 
 ### Sliding Window Search
 
