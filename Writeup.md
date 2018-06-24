@@ -76,7 +76,7 @@ To combine the boxes found there and eliminate some false positives, a heat map 
 
 The performance of the method calculating HOG on each particular window was slow. To improve the processing performance, a HOG sub-sampling was implemented as suggested on Udacity's lectures. The implementation of this method could be found on `In [14]`. The following image shows the results applied to the test images (the same heatmap and threshold procedure was applied as well on `In [15]`):
 
-![Sliding windows with HOG sub-sampling](images/https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_5.png)
+![Sliding windows with HOG sub-sampling](https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_5.png)
 
 ### Video implementation
 
