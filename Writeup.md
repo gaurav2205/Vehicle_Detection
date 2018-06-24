@@ -39,7 +39,7 @@ The feature extraction code (spatial, color and HOG) is at `In [4]`. This cell c
 
 Next image shows an example for HOG for a vehicle and non-vehicle calculated at `In [19]`:
 
-![HOG Vehicle and non-vehicle images](images/hog.png)
+![HOG Vehicle and non-vehicle images](https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_2.png)
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
@@ -58,7 +58,7 @@ The parameters were found by manually changing them and experimenting to try to 
 |Classifier|LinearSVC|
 |Scaler|StandardScaler|
 
-With this parameters, the classifier accuracy was 99.41 % and it took 4.26 seconds to train.
+With this parameters, the classifier accuracy was 99.41 % and it took 10.06 seconds to train.
 
 ### Sliding Window Search
 
@@ -66,23 +66,23 @@ With this parameters, the classifier accuracy was 99.41 % and it took 4.26 secon
 
 My first approach to implement sliding windows was to calculate all the windows and then apply the feature extraction to each one of them to find the one containing a car. It is implemented on `In [8]`. Cells `In [9]` and `In [10]` contains the code for loading the test images, applying the classifier to the images and drawing boxes. The scales and overlap parameter where found by experimenting on them until a successful result was found. The following image shows the results of this experimentation on the test images:
 
-![Sliding windows first implementation](images/sliding_windows.png)
+![Sliding windows first implementation](https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_3.png)
 
 To combine the boxes found there and eliminate some false positives, a heat map as implemented with a threshold and the function `label()` from `scipy.ndimage.measurements` was used to find where the cars we. The code for this implementation could be found on `In [13]`, and the next image shows the results on the test images:
 
-![Sliding windows with heatmap and threshold](images/withheatmap.png)
+![Sliding windows with heatmap and threshold](https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_4.png)
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working. What did you do to optimize the performance of your classifier?
 
 The performance of the method calculating HOG on each particular window was slow. To improve the processing performance, a HOG sub-sampling was implemented as suggested on Udacity's lectures. The implementation of this method could be found on `In [14]`. The following image shows the results applied to the test images (the same heatmap and threshold procedure was applied as well on `In [15]`):
 
-![Sliding windows with HOG sub-sampling](images/hog_subsampling.png)
+![Sliding windows with HOG sub-sampling](images/https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_5.png)
 
 ### Video implementation
 
 #### 1. Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 
-The video output could be found [project_video.mp4](video_output/project_video.mp4)
+The video output could be found [project_video.mp4](https://github.com/gaurav2205/Vehicle_Detection/blob/master/video_output/project_video.mp4)
 
 #### 2. Describe how (and identify where in your code) you implemented some filter for false positives and some method for combining overlapping bounding boxes.
 
