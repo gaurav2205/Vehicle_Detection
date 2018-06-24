@@ -33,7 +33,7 @@ The training images are loaded at `In [2]`:
 
 Here is an example of those images:
 
-![Vehicle and non-vehicle images](images/vehicle-non-vehicle.png)
+![Vehicle and non-vehicle images](https://github.com/gaurav2205/Vehicle_Detection/blob/master/writeup_images/image_1.png)
 
 The feature extraction code (spatial, color and HOG) is at `In [4]`. This cell contains a set of functions provided by Udacity's lectures to extract the features from an image. The function `extract_features` combine the other function and use the class `FeatureParameters` to hold all the parameters in a single place.
 
